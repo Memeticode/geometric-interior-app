@@ -248,9 +248,10 @@ document.getElementById('toolbar').addEventListener('input', () => scheduleRende
 // Enter in a field would otherwise submit (and reload) the page.
 form.addEventListener('submit', event => event.preventDefault());
 
+// Randomizes seed, controls, and camera; keeps the language and output size.
 document.getElementById('randomize').addEventListener('click', () => {
-    const { locale, aspect, height, camera } = readForm();
-    writeForm(randomRenderStillConfig({ locale, aspect, height, camera }));
+    const { locale, aspect, height } = readForm();
+    writeForm(randomRenderStillConfig({ locale, aspect, height }));
     scheduleRender(0);
 });
 
