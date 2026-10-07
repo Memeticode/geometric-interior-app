@@ -284,7 +284,8 @@ statement.addEventListener('click', event => {
 // saved choice, or browser language) and hid the page if it isn't English.
 
 const locale = document.documentElement.dataset.locale || 'en';
-writeForm(configFromHash() ?? parseRenderStillConfig({ locale }).config);
+// A shared link reproduces its image; a clean visit starts from a random one.
+writeForm(configFromHash() ?? randomRenderStillConfig({ locale, aspect: '1:1' }));
 try {
     await applyLocale(locale);
 } finally {

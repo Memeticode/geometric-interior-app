@@ -28,14 +28,7 @@ npm run preview  # build and serve dist/ locally
 
 The build copies `public/` into `dist/` and adds the library files listed in `scripts/vendor.js` under `dist/vendor/`. If a dependency upgrade adds or renames files, update that list and the import map together.
 
-## Deploy to Cloudflare Pages
+## Deployed via Cloudflare Pages
 
-Connect the repository in Cloudflare Pages with:
+https://geometric-interior.org/
 
-| Setting | Value |
-|---|---|
-| Framework preset | None |
-| Build command | `npm run build` |
-| Build output directory | `dist` |
-
-Or deploy from your machine with Wrangler: `npm run build && npx wrangler pages deploy dist`.
