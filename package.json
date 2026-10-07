@@ -12,7 +12,7 @@
     "node": ">=20"
   },
   "dependencies": {
-    "@memeticode/geometric-interior": "^0.1.0"
+    "@memeticode/geometric-interior": "^0.2.0"
   },
   "license": "MIT"
 }
