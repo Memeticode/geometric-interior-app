@@ -159,3 +159,6 @@ Thumbs.db
 .vscode/*
 !.vscode/extensions.json
 .idea/
+
+# Not tracked: Cloudflare runs npm install and resolves package.json ranges
+package-lock.json
